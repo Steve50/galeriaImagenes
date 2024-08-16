@@ -1,0 +1,25 @@
+.content{
+    width: 100%;
+    display: flex;
+
+}
+.tituloDeGaleria{
+    text-align: center;
+}
+.galeriaDeImagenes{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    grid-column-gap: 5px;
+    grid-row-gap: 15px;
+    justify-content: center;
+    width: calc(80% - 80px);
+}
+.galeriaDeImagenes img{
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+}
+.galeriaDeImagenes img:hover{
+    transform: scale(1.5);
+}
